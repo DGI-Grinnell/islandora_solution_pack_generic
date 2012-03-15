@@ -4,5 +4,38 @@
  * Implements hook_required_fedora_objects().
  */
 function islandora_generic_sp_required_fedora_objects() {
-  return array('islandora_generic_sp' => array());
+  $module_path = drupal_get_path('module','islandora_generic_sp');
+  $objects = array(
+    'islandora_generic_sp' => array(
+      'module' => 'islandora_generic_sp',
+      'title' => 'Islandora Generic Solution Pack',
+      'objects' => array(
+        array(
+          'pid' => 'islandora:genericCModel',
+          'dsid' => 'ISLANDORACM',
+          'label' => 'Islandora Generic Content Model',
+          'cmodel' => 'fedora-system:ContentModel-3.0',
+          'datastream_file' => "$module_path/xml/GENERIC_SP_CMODEL.xml",
+        ),
+        array(
+          'pid' => 'islandora:genericCollection',
+          'label' => 'Islandora Generic Object Collection',
+          'cmodel' => 'islandora:collectionCModel',
+          'parent' => 'islandora:root',
+          'datastreams' => array(
+            array(
+              'dsid' => 'TN',
+              'datastream_file' => "$module_path/images/document.gif",
+              'mimetype' => 'image/png',
+            ),
+            array(
+              'dsid' => 'COLLECTION_POLICY',
+              'datastream_file' => "$module_path/xml/GENERIC_COLLECTIONPOLICY.xml",
+            ),
+          ),
+        ),
+      ),
+    ),
+  );
+  return $objects;
 }
