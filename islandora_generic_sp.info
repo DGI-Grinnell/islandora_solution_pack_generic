@@ -1,0 +1,6 @@
+name = Islandora Generic Item Solution Pack
+description = Installs a generic item content model and associated MODS form for compound objects
+version = 6.x-1.0-dev
+package = Islandora Solution Pack
+core = 6.x
+dependencies[] = fedora_repository
