@@ -1,0 +1,8 @@
+<?php
+
+/** 
+ * Implements hook_required_fedora_objects().
+ */
+function islandora_generic_sp_required_fedora_objects() {
+  return array('islandora_generic_sp' => array());
+}
