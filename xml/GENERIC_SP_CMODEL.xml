@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content_model xmlns="http://www.islandora.ca"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.islandora.ca localhost/islandoracm.xsd" name="Item">
+    <mimetypes>
+        <type>text/xml</type>
+		<!-- additional types go here -->
+		<type>image/gif</type>
+    </mimetypes>
+    <ingest_rules></ingest_rules>
+    <ingest_form dsid="MODS" page="2">
+        <form_builder_method file="" class="" method="" handler=""/>
+        <form_elements></form_elements>
+    </ingest_form>
+    <datastreams>
+        <datastream dsid="DC"></datastream>
+        <datastream dsid="TN"></datastream>
+        <datastream dsid="MODS"></datastream>
+		<!-- additional streams go here -->
+		<datastream dsid="PDF"></datastream>
+    </datastreams>
+    <forms>
+        <form name="" dsid="MODS" document_module="" document_file="" document_class=""></form>
+    </forms>
+</content_model>
