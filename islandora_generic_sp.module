@@ -25,7 +25,7 @@ function islandora_generic_sp_required_fedora_objects() {
           'datastreams' => array(
             array(
               'dsid' => 'TN',
-              'datastream_file' => "$module_path/images/document.gif",
+              'datastream_file' => "$module_path/images/Crystal_Clear_mimetype_document.png",
               'mimetype' => 'image/png',
             ),
             array(
