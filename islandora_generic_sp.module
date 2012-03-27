@@ -43,7 +43,7 @@ function islandora_generic_sp_required_fedora_objects() {
 /**
  * Implements hook_register_content_models_for_viewer().
  */
-function islandora_sp_generic_register_content_models_for_viewer() {
+function islandora_generic_sp_register_content_models_for_viewer() {
   $models = array();
   $models['islandora:genericCModel'] = array(
     'type' => 'inc',
@@ -51,4 +51,5 @@ function islandora_sp_generic_register_content_models_for_viewer() {
     'file' => 'models/Default',
     'class' => 'DefaultModelViewer'
   );
+  return $models;
 }
