@@ -47,9 +47,14 @@ function islandora_generic_sp_register_content_models_for_viewer() {
   $models = array();
   $models['islandora:genericCModel'] = array(
     'type' => 'inc',
+    'module' => 'scholar',
+    'file' => 'CitationModel',
+    'class' => 'CitationModel'
+    /*
     'module' => 'content_model_viewer',
     'file' => 'models/Default',
     'class' => 'DefaultModelViewer'
+    */
   );
   return $models;
 }
